@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShareFileTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NW0-P7-2z5">
+                                <rect key="frame" x="149.5" y="138" width="115" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Qao-4j-egZ"/>
+                                </constraints>
+                                <state key="normal" title="ShareImage" image="square.and.arrow.down" catalog="system">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="share:" destination="BYZ-38-t0r" eventType="touchUpInside" id="69A-Pt-e4I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3g-i0-9O8">
+                                <rect key="frame" x="155" y="201" width="104" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="zHx-vA-2pg"/>
+                                </constraints>
+                                <state key="normal" title="Share PDF" image="square.and.arrow.down" catalog="system">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="sharePDF:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LIJ-j8-X98"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8h8-Qn-zmh">
+                                <rect key="frame" x="151" y="258" width="112" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="y5t-i1-Gmc"/>
+                                </constraints>
+                                <state key="normal" title="Share Docx" image="square.and.arrow.down" catalog="system">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareDOCX:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2DO-Fc-0Ii"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7L-gP-YFX">
+                                <rect key="frame" x="155" y="312" width="104" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Sil-MX-FuY"/>
+                                </constraints>
+                                <state key="normal" title="Share Xlsx" image="square.and.arrow.down" catalog="system">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareXlsx:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LPq-oz-LFR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMe-6O-oHp">
+                                <rect key="frame" x="155" y="374" width="104" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="cIW-R2-4ad"/>
+                                </constraints>
+                                <state key="normal" title="Share Link" image="square.and.arrow.down" catalog="system">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dzN-XP-JZA"/>
+                                    <action selector="shareXlsx:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vtg-NW-Wf9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a7L-gP-YFX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3i4-O3-6Ix"/>
+                            <constraint firstItem="OMe-6O-oHp" firstAttribute="top" secondItem="a7L-gP-YFX" secondAttribute="bottom" constant="40" id="C6a-bd-q0H"/>
+                            <constraint firstItem="a3g-i0-9O8" firstAttribute="top" secondItem="NW0-P7-2z5" secondAttribute="bottom" constant="41" id="FsN-Nk-2v6"/>
+                            <constraint firstItem="a7L-gP-YFX" firstAttribute="top" secondItem="8h8-Qn-zmh" secondAttribute="bottom" constant="32" id="I1H-yi-t53"/>
+                            <constraint firstItem="8h8-Qn-zmh" firstAttribute="top" secondItem="a3g-i0-9O8" secondAttribute="bottom" constant="35" id="Khy-ZF-Bbe"/>
+                            <constraint firstItem="OMe-6O-oHp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mu8-5y-Vk4"/>
+                            <constraint firstItem="a3g-i0-9O8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TrS-bB-MGs"/>
+                            <constraint firstItem="NW0-P7-2z5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="94" id="Ya2-Tq-QN5"/>
+                            <constraint firstItem="8h8-Qn-zmh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gmu-ae-4AM"/>
+                            <constraint firstItem="NW0-P7-2z5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yOR-8L-cYq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="91"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
